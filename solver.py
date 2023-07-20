@@ -2,7 +2,7 @@ from ortools.sat.python import cp_model
 
 
 class Solver:
-    def __init__(self, matrix, granularity=10000):
+    def __init__(self, matrix, granularity=100):
         for row in matrix:
             if len(row) != len(matrix) - 1:
                 raise ValueError("Matrix must be x by x-1")
